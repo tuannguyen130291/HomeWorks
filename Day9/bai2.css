@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+.maine-item{
+    margin: 10px auto;
+    width:80%;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px 20px;
+}
+.maine-item .item {
+    position: relative;
+    width:30%;
+    border: 1px solid rgba(153, 149, 149, 0.427);
+}
+.maine-item .item .item-content {
+    position: relative;
+    margin: 40px 20px;
+    transition: 0.3s ease-in-out;   
+}
+.maine-item .item .item-content .icon{
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: rgb(245, 172, 82);
+    transition: 0.3s ease-in-out;
+
+}
+.maine-item .item .item-content h3 {
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 10px;
+}
+.maine-item .item .item-content p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgba(97, 97, 94, 0.498);
+    font-size: 0.8em;
+}
+/* css popup */
+.item--overlay{
+    visibility: hidden;
+    position: absolute;
+    inset:0;
+    background-color: rgba(225, 149, 87, 0.304);
+    display: flex;
+    align-items: flex-end;
+}
+.item--overlay .overlay__content{
+    margin: 40px 30px;
+    display: flex;
+    align-items: center;
+    font-family:'Space Grotesk', sans-serif;
+    text-transform: capitalize;
+
+}
+.item--overlay .overlay__content > i{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(102, 194, 194, 0.5);
+    margin-left: 10px;
+    font-size: 1.5em;  
+}
+/* hover start */
+.maine-item .item:hover .item-content > i{
+    display: none;
+}
+.maine-item .item:hover {
+background-image: url(https://picsum.photos/200/300);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.maine-item .item:hover .item-content {
+    margin: 20px;
+    height: 85%;
+    padding: 15px;
+    border: 2px solid rgba(141, 137, 137, 0.412);
+}
+/* .item:hover .item-content{
+    z-index: 99;
+} */
+ .item:hover .item-content > h3, p{
+    color: #ffff;
+    
+}
+.item:hover .item-content > p{
+    color: #ffff;
+}
+
+.maine-item .item:hover .item--overlay {
+    visibility: unset;
+}
+.overlay__content p:hover + i, .overlay__content i:hover {
+    color: beige;
+}

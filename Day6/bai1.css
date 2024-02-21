@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,300;0,500;1,400&display=swap');
+.nav-bar{
+
+    margin-top: 20px;;
+    width: 100%;;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list > li{
+    position: relative;
+    padding: 8px;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid #cccc;
+}
+.nav-list > li > a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/* create icon */
+.nav-list .about-us::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f005";
+    margin: 0 5px;
+}
+.nav-list .about-us::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f078";
+    margin: 0 5px;   
+}
+.nav-list .news::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f0a1";
+    margin: 0 5px;      
+}
+.nav-list .news::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f078";
+    margin: 0 5px;      
+}
+.nav-list .portfolio::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f0b1";
+    margin: 0 5px;      
+}
+.nav-list .portfolio::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f078";
+    margin: 0 5px;      
+}
+.nav-list .blog::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f044";
+    margin: 0 5px;      
+}
+.nav-list .contact::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f095";
+    margin: 0 5px;   
+}
+/* ----------------------------------- */
+
+.sub-menu::before{
+    content:'';
+    position: absolute;
+    top: -20px;
+    right: 120px;
+    border: 10px solid;
+    border-color: transparent  transparent #fff transparent;
+}
+.sub-menu{
+    position: absolute;
+    top: 45px;
+    left:0px;
+    border: 1px solid #cccc;
+    box-shadow: 2px 2px 10px grey;
+}
+.sub-menu > li{
+    list-style: none;
+    padding: 8px 80px 8px 20px;
+    border-bottom: 1px solid #cccc;
+}
+.sub-menu li a{
+    
+    text-decoration: none;
+}

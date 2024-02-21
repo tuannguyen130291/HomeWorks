@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width:1200px;
+    height: auto;
+}
+.main__hearder{
+    margin: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main__hearder h2 {
+    font-size: 2.5em;
+    text-transform:capitalize ;
+    margin-bottom: 20px;
+}
+.main__hearder p {
+    margin-bottom: 20px;
+    color: #585555cc;
+}
+.main__hearder p::first-letter{
+    text-transform: capitalize;
+}
+/* content */
+.main__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    text-align: center;
+    width: 1020px;
+}
+.content__input-field{
+    position: relative;
+
+}
+.content__input-field input, .main__content select{
+    padding: 20px;
+    min-height: 100%;
+    min-width: 500px;
+    border: 1px solid #cccccc79;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.main__content select{
+    color: #918888fe;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content__input-field label{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:20px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #91888881;
+    user-select: none;
+    pointer-events:none;
+}
+/* textarea start */
+.content__textarea{
+    position: relative;
+    margin-bottom: 20px;
+    min-width:100%;
+    
+}
+.content__textarea textarea{
+    min-width:100%;
+    border:1px solid #cccccc79;
+    border-radius: 5px;
+    padding: 30px 20px;
+    font-size: 1.2em;
+}
+.content__textarea label{
+    position: absolute;
+    top:18px;
+    left:20px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #91888881;
+}
+/* textarea end */
+
+/* place-holder-shown of textarea */
+.content__textarea textarea:not(:placeholder-shown) + label,
+.content__textarea textarea:focus + label{
+    top:10px;
+    font-size: 0.8em;
+    border:1px solid #ccccccf0 ;
+ }
+
+/* place-holder-shown of input*/
+.content__input-field input:not(:placeholder-shown) + label,
+.content__input-field input:focus + label{ 
+    top:12px;
+    font-size: 0.8em;
+    border-color: #d1b816e1 ;
+}
+.content__input-field input:not(:placeholder-shown){
+    background-color: rgba(211, 211, 243, 0.517);
+}
+.main__content button {
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(79, 79, 230);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 1.2em;
+    cursor: pointer;
+}

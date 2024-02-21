@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;1,400&family=Open+Sans:ital@1&display=swap');
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center  ;
+    border:1px solid #ffff;
+    width:100%;
+    height: auto;
+    background-image: url(https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg);
+
+}
+.heading{
+    display:flex;
+    margin-top: 225px;
+    margin-bottom: 0;
+    margin-left: 40px;
+}
+.heading .logo{
+   
+    width:200px;
+    height:125px;
+}
+.heading .logo img{
+    border-radius: 5px 5px 0 0 ;
+    background-color: #ffff;
+    width:200px;
+    height:125px;
+    
+
+}
+.title h3 {
+    margin:20px 10px;
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 1.6em;
+
+}
+.title p{
+    margin: 0 10px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #ffff;
+    font-family:'Asap',sans-serif;
+    display:inline-block
+    
+}
+b{
+    font-size:1.5em;
+}
+.banner ul{
+    padding:10px;
+    margin:0 20px;
+    list-style-type: none;
+    justify-content: flex-end;
+    display: flex;
+}
+.banner ul > li{
+    margin:0 10px;
+    font-size: 0.8em;
+    text-transform:uppercase;
+    font-family:'Asap',sans-serif;
+}
+.banner ul > li:hover{
+    color:crimson;
+    border-bottom: 3px solid crimson;
+}

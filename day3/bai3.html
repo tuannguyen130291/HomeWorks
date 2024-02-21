@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai3.css">
+</head>
+<body>
+    <table>
+    <tr>
+        <td><label class="input-title" for="lbl-name">User name:</label></td>
+        <td><label><input class="input-box" id="lbl-name" type="text"required></label></td>
+    </tr>
+    <tr>
+        <td><label class="input-title" for="lbl-password">Password:</label></td>
+        <td><label ><input class="input-box"  id="lbl-password" type="text" required></label></td>
+    </tr>
+    <tr>
+        <td><label class="input-title" for="lbl-city">City of Employment:</label></td>
+        <td><label ><input class="input-box"  id="lbl-city" type="text" required></label></td>
+    </tr>
+    <tr>
+        <td><label class="input-title" for="lbl- Servername">Web server:</label></td>
+        <td><select class="input-select" id="lbl-Servername">
+            <option value="0">-Choose a server-</option>
+            <option value="1">Ha Noi</option>
+            <option value="2">Da Nang</option>
+            <option value="3">Sai Gon</option>
+           </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label class="input-title">Please specify your role:</label></td>
+        <td><span class="input-radio">
+            <label ><input type="radio" name="role" value="Admin">Admin</label><br>
+            <label ><input type="radio" name="role" value="Engineer">Engineer</label><br>
+            <label ><input type="radio" name="role" value="Manage">Manage</label><br>
+            <label><input type="radio" name="role" value="Guest">Guest</label><br>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td><label class="input-title">Single sign-on co the following:</label></td>
+        <td><span class="input-checkbox">
+            <label ><input type="checkbox" name="sign-on" value="Admin">Mail</label><br>
+            <label ><input type="checkbox" name="sign-on" value="Engineer">Payroll</label><br>
+            <label ><input type="checkbox" name="sign-on" value="Manage">Service</label><br>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td >
+            <button  class="button1" type="submit">Login</button>
+            <button class="button2"type="reset">Reset</button>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
