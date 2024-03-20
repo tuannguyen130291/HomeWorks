@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        .board {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board" id="chessBoard"></div>
+    <script>
+        function createChessBoard() {
+            const board = document.getElementById('chessBoard');
+            let isBlack = false;
+
+            for (let i = 0; i < 64; i++) {
+                const square = document.createElement('div');
+                square.classList.add('square');
+
+                if (isBlack) {
+                    square.classList.add('black');
+                } else {
+                    square.classList.add('white');
+                }
+                isBlack = !isBlack;
+                board.appendChild(square);
+                if ((i + 1) % 8 === 0) {
+                    isBlack = !isBlack;
+                }
+            }
+        }
+
+        createChessBoard();
+    </script>
+</body>
+
+</html>

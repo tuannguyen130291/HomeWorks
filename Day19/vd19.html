@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Words</title>
+    <style>
+        #coloredText {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="coloredText">
+    </p>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let chuoiChua = "Tô màu từng từ trong chuỗi kí tự";
+
+            // Chia chuỗi thành các từ
+            let cacTu = chuoiChua.split(" ");
+
+            // Tạo một chuỗi HTML với mỗi từ được bao bọc trong một thẻ <span> và tô màu đỏ
+            let chuoiHTML = "";
+            for (let i = 0; i < cacTu.length; i++) {
+                chuoiHTML += "<span class='red-text'>" + cacTu[i] + "</span> ";
+            }
+
+            // Đưa chuỗi HTML đã tạo vào phần tử có id là "coloredText"
+            setInterval(function () { getElementById("coloredText").innerHTML = chuoiHTML; }, 1000)
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
